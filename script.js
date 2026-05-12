@@ -1,0 +1,1 @@
+console.log("Digitalna Time Capsule učitana!");
