@@ -10,9 +10,9 @@
 </head>
 
 <body>
-<button id="backBtn" class="back hidden" onclick="goHome()">⬅ Natrag</button>
+
     <!-- STRELICA (skrivena na početku) -->
-   
+    <button id="backBtn" class="back hidden" onclick="goHome()">⬅ Natrag</button>
 
     <!-- NASLOV -->
     <header class="hero">
@@ -37,26 +37,26 @@
 
     </section>
 
-    <!-- SEKCIJA: SLIKE -->
+    <!-- SLIKE -->
     <section id="slike" class="hidden page">
 
         <h2>Slike</h2>
 
         <div class="content">
-         <img src="slike/slika1.jpg" onclick="openLightbox(this.src)">
-<img src="slike/slika2.jpg" onclick="openLightbox(this.src)">
-<img src="slike/slika3.jpg" onclick="openLightbox(this.src)">
-<img src="slike/slika4.jpg" onclick="openLightbox(this.src)">
-<img src="slike/slika5.jpg" onclick="openLightbox(this.src)">
-<img src="slike/slika6.jpg" onclick="openLightbox(this.src)">
-<img src="slike/slika7.jpg" onclick="openLightbox(this.src)">
-<img src="slike/slika8.jpg" onclick="openLightbox(this.src)">
-<img src="slike/slika9.jpg" onclick="openLightbox(this.src)">
-				  </div>
+            <img src="slike/slika1.jpg" onclick="openLightbox(this.src)">
+            <img src="slike/slika2.jpg" onclick="openLightbox(this.src)">
+            <img src="slike/slika3.jpg" onclick="openLightbox(this.src)">
+            <img src="slike/slika4.jpg" onclick="openLightbox(this.src)">
+            <img src="slike/slika5.jpg" onclick="openLightbox(this.src)">
+            <img src="slike/slika6.jpg" onclick="openLightbox(this.src)">
+            <img src="slike/slika7.jpg" onclick="openLightbox(this.src)">
+            <img src="slike/slika8.jpg" onclick="openLightbox(this.src)">
+            <img src="slike/slika9.jpg" onclick="openLightbox(this.src)">
+        </div>
 
     </section>
 
-    <!-- SEKCIJA: INTERVJUI -->
+    <!-- INTERVJUI -->
     <section id="intervjui" class="hidden page">
 
         <h2>Intervjui</h2>
@@ -67,7 +67,7 @@
 
     </section>
 
-    <!-- SEKCIJA: GLAZBA -->
+    <!-- GLAZBA -->
     <section id="glazba" class="hidden page">
 
         <h2>Glazba</h2>
@@ -80,11 +80,14 @@
 
     </section>
 
+    <!-- LIGHTBOX (MORA BITI PRIJE JS-a) -->
+    <div id="lightbox" class="lightbox hidden" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+
     <!-- JAVASCRIPT -->
     <script src="script.js"></script>
-<div id="lightbox" class="lightbox hidden" onclick="closeLightbox()">
-    <img id="lightbox-img">
-</div>
+
 </body>
 
 </html>
