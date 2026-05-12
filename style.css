@@ -66,5 +66,7 @@ body {
     display: none;
 }
 body {
-    background: red !important;
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(135deg, #f8d7da, #f5e6ea);
 }
