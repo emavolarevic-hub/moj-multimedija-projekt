@@ -17,28 +17,29 @@
         <p>Uspomene našeg razreda sačuvane zauvijek</p>
     </header>
 
-    <!-- NAVIGACIJA (3 OPCIJE) -->
+    <!-- MENU -->
     <section class="menu">
 
-        <a href="#slike" class="card">
+        <a href="#" class="card" onclick="showSection('slike')">
             <h2>📸 Slike</h2>
             <p>Najbolji trenuci iz škole</p>
         </a>
 
-        <a href="#intervjui" class="card">
+        <a href="#" class="card" onclick="showSection('intervjui')">
             <h2>🎤 Intervjui</h2>
             <p>Razmišljanja učenika</p>
         </a>
 
-        <a href="#glazba" class="card">
+        <a href="#" class="card" onclick="showSection('glazba')">
             <h2>🎵 Glazba</h2>
             <p>Zvukovi naše generacije</p>
         </a>
 
     </section>
 
-    <!-- SEKCIJA: SLIKE -->
-    <section id="slike">
+    <!-- SEKCIJE (skrivene na početku) -->
+
+    <section id="slike" class="hidden">
         <h2>Slike</h2>
 
         <div class="content">
@@ -48,21 +49,19 @@
         </div>
     </section>
 
-    <!-- SEKCIJA: INTERVJUI -->
-    <section id="intervjui">
+    <section id="intervjui" class="hidden">
         <h2>Intervjui</h2>
 
         <div class="box">
-            <p>"Najbolje uspomene su iz škole i druženja."</p>
+            <p>"Najbolje uspomene iz škole."</p>
         </div>
 
         <div class="box">
-            <p>"Nikad neću zaboraviti razred i prijatelje."</p>
+            <p>"Prijatelji i smijeh svaki dan."</p>
         </div>
     </section>
 
-    <!-- SEKCIJA: GLAZBA -->
-    <section id="glazba">
+    <section id="glazba" class="hidden">
         <h2>Glazba</h2>
 
         <ul>
@@ -71,6 +70,8 @@
             <li>🎵 Grše - Mamma Mia</li>
         </ul>
     </section>
+
+    <script src="script.js"></script>
 
 </body>
 

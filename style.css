@@ -115,3 +115,63 @@ footer{
     padding:20px;
     margin-top:40px;
 }
+.hidden {
+    display: none;
+}
+
+/* osnovni izgled (ako već imaš, ostavi svoj dizajn) */
+
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #f8d7da, #f5e6ea);
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: #b76e79;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff0f3;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #5a3b42;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+section {
+    text-align: center;
+    padding: 40px;
+}
+
+.content img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.box {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+}
