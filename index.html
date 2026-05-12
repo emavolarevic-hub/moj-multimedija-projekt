@@ -14,34 +14,30 @@
     <!-- NASLOV -->
     <header class="hero">
         <h1>TIME CAPSULA</h1>
-        <p>Uspomene našeg razreda sačuvane zauvijek</p>
+        <p>Odaberi što želiš otvoriti</p>
     </header>
 
-    <!-- MENU -->
+    <!-- 3 OPCIJE -->
     <section class="menu">
 
-        <a href="#" class="card" onclick="showSection('slike')">
+        <div class="card" onclick="showSection('slike')">
             <h2>📸 Slike</h2>
-            <p>Najbolji trenuci iz škole</p>
-        </a>
+        </div>
 
-        <a href="#" class="card" onclick="showSection('intervjui')">
+        <div class="card" onclick="showSection('intervjui')">
             <h2>🎤 Intervjui</h2>
-            <p>Razmišljanja učenika</p>
-        </a>
+        </div>
 
-        <a href="#" class="card" onclick="showSection('glazba')">
+        <div class="card" onclick="showSection('glazba')">
             <h2>🎵 Glazba</h2>
-            <p>Zvukovi naše generacije</p>
-        </a>
+        </div>
 
     </section>
 
-    <!-- SEKCIJE (skrivene na početku) -->
+    <!-- SEKCIJE (SKRIVENE NA POČETKU) -->
 
-    <section id="slike" class="hidden">
+    <section id="slike" class="hidden page">
         <h2>Slike</h2>
-
         <div class="content">
             <img src="slike/slika1.jpg">
             <img src="slike/slika2.jpg">
@@ -49,19 +45,14 @@
         </div>
     </section>
 
-    <section id="intervjui" class="hidden">
+    <section id="intervjui" class="hidden page">
         <h2>Intervjui</h2>
 
-        <div class="box">
-            <p>"Najbolje uspomene iz škole."</p>
-        </div>
-
-        <div class="box">
-            <p>"Prijatelji i smijeh svaki dan."</p>
-        </div>
+        <div class="box">"Najbolje uspomene iz škole."</div>
+        <div class="box">"Prijatelji zauvijek."</div>
     </section>
 
-    <section id="glazba" class="hidden">
+    <section id="glazba" class="hidden page">
         <h2>Glazba</h2>
 
         <ul>
