@@ -43,15 +43,15 @@
         <h2>Slike</h2>
 
         <div class="content">
-            <img src="slike/slika1.jpg" alt="slika1">
-            <img src="slike/slika2.jpg" alt="slika2">
-            <img src="slike/slika3.jpg" alt="slika3">
-			 <img src="slike/slika4.jpg" alt="slika4">
-			  <img src="slike/slika5.jpg" alt="slika5">
-			   <img src="slike/slika6.jpg" alt="slika6">
-			    <img src="slike/slika7.jpg" alt="slika7">
-				 <img src="slike/slika8.jpg" alt="slika8">
-				  <img src="slike/slika9.jpg" alt="slika9">
+         <img src="slike/slika1.jpg" onclick="openLightbox(this.src)">
+<img src="slike/slika2.jpg" onclick="openLightbox(this.src)">
+<img src="slike/slika3.jpg" onclick="openLightbox(this.src)">
+<img src="slike/slika4.jpg" onclick="openLightbox(this.src)">
+<img src="slike/slika5.jpg" onclick="openLightbox(this.src)">
+<img src="slike/slika6.jpg" onclick="openLightbox(this.src)">
+<img src="slike/slika7.jpg" onclick="openLightbox(this.src)">
+<img src="slike/slika8.jpg" onclick="openLightbox(this.src)">
+<img src="slike/slika9.jpg" onclick="openLightbox(this.src)">
 				  </div>
 
     </section>
@@ -82,7 +82,9 @@
 
     <!-- JAVASCRIPT -->
     <script src="script.js"></script>
-
+<div id="lightbox" class="lightbox hidden" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
 </body>
 
 </html>
