@@ -1,23 +1,24 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
     background: linear-gradient(135deg, #f8d7da, #f5e6ea);
+    color: #5a3b42;
 }
 
 /* NASLOV */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
     color: #b76e79;
 }
 
-/* MENU */
+/* MENU (POČETNA) */
 .menu {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 40px;
+    gap: 25px;
     flex-wrap: wrap;
+    padding: 30px;
 }
 
 /* KARTICE */
@@ -27,9 +28,8 @@ body {
     background: #fff0f3;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 20px;
+    justify-content: center;
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     transition: 0.3s;
@@ -42,7 +42,7 @@ body {
 /* SEKCIJE */
 .page {
     text-align: center;
-    padding: 40px;
+    padding: 30px;
 }
 
 /* SLIKE */
@@ -52,21 +52,47 @@ body {
     border-radius: 10px;
 }
 
-/* BOX */
+/* TEKST BOX (INTERVJUI) */
 .box {
     background: white;
-    margin: 10px auto;
     padding: 15px;
+    margin: 10px auto;
     width: 300px;
     border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
-/* HIDE */
+/* GLAZBA LISTA */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+}
+
+/* STRELICA */
+.back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #b76e79;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.back:hover {
+    transform: scale(1.1);
+}
+
+/* SKRIVANJE ELEMENATA */
 .hidden {
     display: none;
-}
-body {
-    font-family: Arial;
-    margin: 0;
-    background: linear-gradient(135deg, #f8d7da, #f5e6ea);
 }

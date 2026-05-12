@@ -10,14 +10,17 @@
 </head>
 
 <body>
-<button class="back hidden" onclick="goHome()">⬅ Natrag</button>
+
+    <!-- STRELICA (skrivena na početku) -->
+    <button id="backBtn" class="back hidden" onclick="goHome()">⬅ Natrag</button>
+
     <!-- NASLOV -->
     <header class="hero">
         <h1>TIME CAPSULA</h1>
         <p>Odaberi što želiš otvoriti</p>
     </header>
 
-    <!-- 3 OPCIJE -->
+    <!-- POČETNA STRANICA (MENU) -->
     <section class="menu">
 
         <div class="card" onclick="showSection('slike')">
@@ -34,26 +37,33 @@
 
     </section>
 
-    <!-- SEKCIJE (SKRIVENE NA POČETKU) -->
-
-
+    <!-- SEKCIJA: SLIKE -->
     <section id="slike" class="hidden page">
+
         <h2>Slike</h2>
+
         <div class="content">
-            <img src="slike/slika1.jpg">
-            <img src="slike/slika2.jpg">
-            <img src="slike/slika3.jpg">
+            <img src="slike/slika1.jpg" alt="slika1">
+            <img src="slike/slika2.jpg" alt="slika2">
+            <img src="slike/slika3.jpg" alt="slika3">
         </div>
+
     </section>
 
+    <!-- SEKCIJA: INTERVJUI -->
     <section id="intervjui" class="hidden page">
+
         <h2>Intervjui</h2>
 
         <div class="box">"Najbolje uspomene iz škole."</div>
         <div class="box">"Prijatelji zauvijek."</div>
+        <div class="box">"Smijeh na svakom satu."</div>
+
     </section>
-	
+
+    <!-- SEKCIJA: GLAZBA -->
     <section id="glazba" class="hidden page">
+
         <h2>Glazba</h2>
 
         <ul>
@@ -61,8 +71,10 @@
             <li>🎵 Dua Lipa - Levitating</li>
             <li>🎵 Grše - Mamma Mia</li>
         </ul>
+
     </section>
 
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
