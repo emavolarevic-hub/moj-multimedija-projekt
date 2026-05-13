@@ -11,7 +11,7 @@
 
 <body>
 
-    <!-- STRELICA (skrivena na početku) -->
+    <!-- STRELICA -->
     <button id="backBtn" class="back hidden" onclick="goHome()">⬅ Natrag</button>
 
     <!-- NASLOV -->
@@ -20,7 +20,7 @@
         <p>Odaberi što želiš otvoriti</p>
     </header>
 
-    <!-- POČETNA STRANICA (MENU) -->
+    <!-- MENU -->
     <section class="menu">
 
         <div class="card" onclick="showSection('slike')">
@@ -61,9 +61,57 @@
 
         <h2>Intervjui</h2>
 
-        <div class="box">"Najbolje uspomene iz škole."</div>
-        <div class="box">"Prijatelji zauvijek."</div>
-        <div class="box">"Smijeh na svakom satu."</div>
+        <div class="content">
+
+            <div class="card">
+                <h3>🎤 Učenik 1</h3>
+
+                <video width="400" controls>
+                    <source src="videi/carlo.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="card">
+                <h3>🎤 Učenik 2</h3>
+
+                <video width="400" controls>
+                    <source src="videi/gregor.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="card">
+                <h3>🎤 Učenik 3</h3>
+
+                <video width="400" controls>
+                    <source src="videi/lorena.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="card">
+                <h3>🎤 Učenik 4</h3>
+
+                <video width="400" controls>
+                    <source src="videi/amarie.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="card">
+                <h3>🎤 Učenik 5</h3>
+
+                <video width="400" controls>
+                    <source src="videi/petra.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="card">
+                <h3>🎤 Učenik 6</h3>
+
+                <video width="400" controls>
+                    <source src="videi/matej.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
 
     </section>
 
@@ -80,7 +128,7 @@
 
     </section>
 
-    <!-- LIGHTBOX (MORA BITI PRIJE JS-a) -->
+    <!-- LIGHTBOX -->
     <div id="lightbox" class="lightbox hidden" onclick="closeLightbox()">
         <img id="lightbox-img">
     </div>
